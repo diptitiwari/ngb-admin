@@ -1,0 +1,3 @@
+// eslint-disable-next-line eol-last
+export const GET_GOOD_RECEIPT_DETAILS = "GET_GOOD_RECEIPT_DETAILS"
+export const LOADING_GOOD_RECEIPT_DETAILS = "LOADING_GOOD_RECEIPT_DETAILS"

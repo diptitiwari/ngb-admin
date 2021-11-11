@@ -1,0 +1,195 @@
+/*=========================================================================================
+  File Name: main.scss
+  Description: Main scss file. Imports other scss partials from 'vuexy' folder
+  ----------------------------------------------------------------------------------------
+  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+  Author: Pixinvent
+  Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+
+@import "vuexy/variables";
+
+@import "vuexy/layout";
+@import "vuexy/typography";
+@import "vuexy/misc";
+@import "vuexy/extraComponents";
+@import "vuexy/themes";
+@import "vuexy/transitions";
+
+@import "vuexy/customClasses";
+
+// Vuesax fixes and enhancments
+@import "vuexy/fixesVuesax";
+
+// Tailwind Fixes
+@import "vuexy/tailwindFix";
+
+// rtl
+@import "vuexy/rtl";
+
+
+// chart tab scss
+
+.vs-tabs-position-left 
+{
+  .con-ul-tabs{
+    height: unset !important;
+  }
+}
+
+.vs-tabs--btn{
+text-align: left;
+}
+.vs-tabs-position-left {
+.vs-tabs--ul{
+    height: 100%;
+}
+}
+
+$tablet: "(max-width: 768px)";
+
+@media #{$tablet} {
+    .vs-tabs-position-left {
+      flex-direction:column ;
+    }
+    .vs-tabs-position-top
+    { 
+      .vs-tabs--ul{
+        flex-direction:column ;
+      }
+    }
+    .horizontal-sm-btn{
+      flex-direction: column;
+      align-items: flex-end !important;
+    }
+    .mb-sm-1{
+      margin-bottom: 0.25rem !important;
+    }
+    .mr-sm-3{
+      margin-bottom: 0.75rem !important;
+    }
+    .flow-root{
+      display: flow-root !important;
+    }
+    .vs-table--header, .vs-table--search
+    {
+      flex-direction: column;
+      align-items: flex-end;
+      span{
+        margin-right:0 !important;
+      }
+    }
+    .vs-table--search{
+      margin-left: auto !important;
+      margin-right: unset !important;
+      margin-bottom:0.25rem ;
+    }
+    .sm-mb-base {
+      margin-bottom: 2.2rem !important;
+    }
+    .sm-jusify-end{
+      justify-content: flex-end !important;
+    }
+    .sm-flex-direction{
+      display: flex;
+      flex-direction: column;
+    }
+    .sm-order-1{
+      order: 1;
+    }
+    .sm-order-2{
+      order: 2;
+    }
+    .sm-order-3{
+      order: 3;
+    }
+    .vue-form-wizard .wizard-card-footer{
+
+    }
+  }
+  $desktop: "(min-width: 768px)";
+
+@media #{$desktop} {
+  .mr-md-2{
+    margin-right: 0.5rem !important;
+  }
+}
+  // scrollbar scss
+
+  body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 4px;
+  }
+  .vs-tabs--ul::-webkit-scrollbar {
+    width: 0px !important; 
+    background: transparent !important; 
+    }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #7367f0;
+  }
+  .vs-tabs--btn{
+    text-align: center;
+  }
+
+  .con-img-upload .con-input-upload {
+    height: 2.5rem;
+    width: 100%;
+}
+.compose-mail-attachment .con-input-upload {
+  margin: 0;
+}
+.con-img-upload{
+  padding: 0.6rem 0;
+}
+  .vs-tabs--btn{
+    text-align: center;
+  }
+  .vs-table--search{
+    margin-right: auto ;
+    margin-left: unset ;
+  }
+  .sm-order-1{
+    order: 1;
+  }
+  .sm-order-2{
+    order: 2;
+  }
+  .sm-order-3{
+    order: 3;
+  }
+  .min-w-200{
+  min-width: 200px;
+  }
+  .vs__dropdown-toggle{
+    padding: 0 0 2px 0 !important;
+  }
+  #avatar-col {
+    width: 82%;
+  }
+  .tab-action-btn-fill-conatiner.con-vs-tabs .vs-tabs--content{
+    padding: 10px 0px !important;
+  }
+  .vx-card .vx-card__collapsible-content .vx-card__body{
+    padding: 1rem !important;
+  }
+  .con-vs-tabs .con-ul-tabs, .vs-tabs--ul{
+    background: #ffff;
+    /* border-radius: 3px; */
+    border-radius: .5rem .5rem 0 0;
+  }
+  .vs-tabs--ul{
+    padding-top: .5rem;
+  }
+  .line-vs-tabs{
+    position: relative !important;
+  }
+  .vs-con-table .vs-table--header .vs-table--search{
+    padding:0 0 1rem 0;
+  }
